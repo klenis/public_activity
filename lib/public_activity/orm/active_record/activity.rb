@@ -15,9 +15,9 @@ module PublicActivity
         # Serialize parameters Hash
         serialize :parameters, Hash
 
-        if ::ActiveRecord::VERSION::MAJOR < 4
+        #if ::ActiveRecord::VERSION::MAJOR < 4
           attr_accessible :key, :owner, :parameters, :recipient, :trackable
-        end
+        #end
       end
     end
   end
